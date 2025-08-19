@@ -1,11 +1,11 @@
-# Terraform Modular Deployments
+## Terraform Modular Deployments
 
 This repository contains an infrastructure managed with **Terraform**, organized in a modular way with multiple **deployment scenarios**. 
 It is designed to allow reusable modules and separation of environments or specific scenarios.
 
 ---
 
-## Repository Structure
+### Repository Structure
 
 The main repository structure is as follows:
 
@@ -40,21 +40,19 @@ modules
 
 ---
 
-## Files Ignored by `.gitignore`
+### Files Ignored by `.gitignore`
 
 To maintain security and avoid state conflicts, **certain files are not committed** to the repository:
 
-# Archivos de estado (no subir nunca)
+- State files
 *.tfstate
 *.tfstate.*
 crash.log
 *.tfvars
-
-# Directorios de terraform
+- Terraform directories
 .terraform/
 .terraform.lock.hcl
-
-# Backups
+- Backups
 *.backup
 *.bak
 *.tmp
