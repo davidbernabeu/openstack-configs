@@ -1,0 +1,31 @@
+clouds:
+  prod:
+    auth:
+    # User auth for logging and creating application credentials
+    # Needs to have TOTP disabled as a user in Openstack
+      auth_url: <keyston_api_endpoint>/v3/
+      username: <usernm>
+      password: <passwd>
+      project_name: <projectnme>
+      user_domain_name: <domainnme>
+      project_domain_name: <domainnme>
+    region_name: <region>
+    interface: public
+    identity_api_version: 3
+    #block_storage_api_version: 3
+    block_storage_api_version: 3.64
+    image_api_version: 2
+
+  # Saving loging credentials from aplication credentials based on the top user  
+  general-aplicatcred: #Applic credential
+    auth_type: v3applicationcredential
+    auth:
+      auth_url: <keyston_api_endpoint>/v3/
+      application_credential_id: <id-applicatcred>
+      application_credential_secret: <applicred-secret>
+    region_name: <region>
+    interface: public
+    identity_api_version: 3
+    #block_storage_api_version: 3
+    block_storage_api_version: 3.64
+    image_api_version: 2
