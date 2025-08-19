@@ -9,22 +9,24 @@ It is designed to allow reusable modules and separation of environments or speci
 
 The main repository structure is as follows:
 
-├── deployments
-│ ├── scenario_1
-│ │ ├── main.tf
-│ │ ├── providers.tf
-│ │ ├── terraform.tfvars
-│ │ └── variables.tf
-│ ├── scenario_2
-│ │ ├── ...
-├── modules
-│ ├── create_resource_1
-│ │ ├── main.tf
-│ │ ├── output.tf
-│ │ ├── provider.tf
-│ │ └── variables.tf
-│ ├── create_resource_2
-│ │ ├── ...
+```
+deployments
+├── scenario_1
+│   ├── main.tf
+│   ├── providers.tf
+│   ├── terraform.tfvars
+│   └── variables.tf
+├── scenario_2
+│   ├── ...
+modules
+├── create_resource_1
+│   ├── main.tf
+│   ├── output.tf
+│   ├── provider.tf
+│   └── variables.tf
+├── create_resource_2
+│   ├── ...
+```
 
 
 - `deployments/`: Contains the different deployment scenarios.  
