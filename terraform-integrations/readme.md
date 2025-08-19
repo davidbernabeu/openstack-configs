@@ -43,7 +43,7 @@ modules
 ### Files Ignored by `.gitignore`
 
 To maintain security and avoid state conflicts, **certain files are not committed** to the repository:
-
+````
 - State files
 *.tfstate
 *.tfstate.*
@@ -56,4 +56,4 @@ crash.log
 *.backup
 *.bak
 *.tmp
-
+````
