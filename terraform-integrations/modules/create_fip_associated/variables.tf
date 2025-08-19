@@ -1,0 +1,1 @@
+variable "port_LAN_vm_id" {}

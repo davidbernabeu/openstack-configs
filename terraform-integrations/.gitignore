@@ -1,0 +1,15 @@
+# Archivos de estado (no subir nunca)
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfvars
+
+# Directorios de terraform
+.terraform/
+.terraform.lock.hcl
+
+# Backups
+*.backup
+*.bak
+*.tmp
+
