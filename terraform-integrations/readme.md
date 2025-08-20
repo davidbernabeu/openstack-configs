@@ -57,3 +57,36 @@ crash.log
 *.bak
 *.tmp
 ````
+
+For creating a project, you will need in the base scenario directory:
+````
+├── scenario_1
+│   ├── main.tf -> include the modules you need for deployment including the variables needed in each case.
+│   ├── providers.tf -> include definition of provider version and variables values.
+│   ├── variables.tf -> definition of variables and its name and type (optional include a description)
+│   └── terraform.tfvars -> values for variables (private)
+````
+
+Example of "terraform.tfvars" in this case:
+
+````
+group_tfg = {
+  auth_url     = "..."
+  username     = "..."
+  password     = "..."
+  project_name = "..."
+  domain_name  = "..."
+  region       = "..."
+}
+
+## Keypair PUBLIC KEY ##
+
+public_key = "..."
+
+## External Network ID ##
+external_network_id = "..."
+
+## Image list ##
+ubuntu_24_04_image_id = "..."
+rocky_9_3_image_id = "..."
+````
