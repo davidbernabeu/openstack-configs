@@ -8,10 +8,10 @@ terraform {
 }
 
 provider "openstack" {
-  auth_url    = var.group_prod_ng.auth_url
-  tenant_name = var.group_prod_ng.project_name
-  user_name   = var.group_prod_ng.username
-  password    = var.group_prod_ng.password
-  domain_name = var.group_prod_ng.domain_name
-  region      = var.group_prod_ng.region
+  auth_url    = var.group_new.auth_url
+  tenant_name = var.group_new.project_name
+  user_name   = var.group_new.username
+  password    = var.group_new.password
+  domain_name = var.group_new.domain_name
+  region      = var.group_new.region
 }
