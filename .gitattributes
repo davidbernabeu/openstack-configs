@@ -1,0 +1,4 @@
+*.conf linguist-language=CONF
+*.yml  linguist-language=YAML
+*.md linguist-language=Markdown
+*.tf linguist-language=HCL
