@@ -11,23 +11,23 @@ variable "group_tfg" {
 
 ## Keypair PUBLIC KEY ##
 variable "public_key" {
-  description = "Clave pública para el keypair acceso DBERNABEU-PORT"
+  description = "Public key for the keypair USER-PORT access"
   type        = string
 }
 
 ## External Network ID ##
 variable "external_network_id" {
-  description = "ID de la red externa"
+  description = "ID of the external network"
   type        = string
 }
 
 
 ## Image list ##
 variable "ubuntu_24_04_image_id" {
-  description = "ID de la imagen Ubuntu 24.04"
+  description = "ID of the Ubuntu 24.04 image"
   type = string
 }
 variable "rocky_9_3_image_id" {
-  description = "ID de la imagen Rocky 9.3"
+  description = "ID of the Rocky 9.3 image"
   type = string
 }
