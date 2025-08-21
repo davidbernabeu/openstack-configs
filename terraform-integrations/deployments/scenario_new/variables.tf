@@ -1,4 +1,4 @@
-variable "group_prod_ng" {
+variable "group_new" {
   type = object({
     auth_url     = string
     username     = string
