@@ -9,7 +9,7 @@ Notes for using application credentials in Openstack
 ---
 
 ### Step 2: Access with username
-After saving, access using the file `clouds.yaml` and the user (example: user named `prod`).
+After saving, access using the file `clouds.yaml` and the user (example: user named `pre`).
 
 ```bash
 openstack --os-cloud pre server list
