@@ -1,12 +1,12 @@
 variable "group_tfg" {
   type = object({
-    user_name     = string
-    tenant_name   = string
-    password      = string
-    auth_url      = string
-    region        = string
-    domain_id     = string
-  }) 
+    auth_url     = string
+    username     = string
+    password     = string
+    project_name = string
+    domain_name  = string
+    region       = string
+  })
 }
 
 ## Keypair PUBLIC KEY ##
@@ -21,7 +21,6 @@ variable "external_network_id" {
   type        = string
 }
 
-
 ## Image list ##
 variable "ubuntu_24_04_image_id" {
   description = "ID de la imagen Ubuntu 24.04"
@@ -31,3 +30,4 @@ variable "rocky_9_3_image_id" {
   description = "ID de la imagen Rocky 9.3"
   type = string
 }
+

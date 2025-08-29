@@ -71,12 +71,12 @@ Example of "terraform.tfvars" in this case:
 
 ````
 group_tfg = {
-  auth_url     = "..."
-  username     = "..."
-  password     = "..."
-  project_name = "..."
-  domain_name  = "..."
-  region       = "..."
+  user_name    = "" 
+  tenant_name  = "" 
+  password     = ""
+  auth_url     = ""
+  region       = "" 
+  domain_id    = ""
 }
 
 ## Keypair PUBLIC KEY ##
